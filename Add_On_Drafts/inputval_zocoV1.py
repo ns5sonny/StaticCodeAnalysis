@@ -62,16 +62,16 @@ def check_takeInput(cfg):
 			if token.str in id_validateFuncts:
 				reportPass(token, msgG)
 			#if it has an input funct but not a validate funct, fail test
-			if token.str not in id_validateFuncts
+			if token.str not in id_validateFuncts:
 				reportError(token, msgB)
 			#if stuff goes crazy, error error
-			else
-				reportWUT(token, mgsWUT)
+			else:
+				reportWUT(token, msgWUT)
 		#if it does not have an input funct, pass test
-		if token.str not in inputFuncts
+		if token.str not in id_inputFuncts:
 			reportNA(token, msgNA)
 		#if anything crazy happens, throw other error msg
-		else
+		else:
 			reportWUT(token, msgWUT)
 	#at end of full function, need
 	sys.exit(cppcheckdata.EXIT_CODE)
