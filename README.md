@@ -1,5 +1,4 @@
 # STATIC CODE ANALYSIS CAPSTONE - U.S. COAST GUARD ACADEMY
-Repo for Capstone Class Code
 
 ## PURPOSE
 This project is our senior capstone project for our degree in Cyber Systems for the U.S. Coast Guard Academy. With a focus in best coding practices aligned with SEI CERT coding standrd, we are looking to improve the functionality of an existing static code analysier, allowing it to find a vulnerability it cannot find already. 
