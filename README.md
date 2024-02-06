@@ -5,7 +5,7 @@ This project is our senior capstone project for our degree in Cyber Systems for 
 
 ## SOFTWARE AND CODING LANGUAGE
   For this project, we will be writing an add-on for the open source static code analysis tool, CPP Check. CPP Check was picked bcause we are confortable with coding in C and C++ because we have taken several classes using the language, in addition to CPP Check being the easiest to download and use. 
-    However, CPP Check's add-ons are written in Python, causing us to learn a new language and pivot our efforts. 
+    However, CPP Check's add-ons are written in Python, requiring us to learn a new language and pivot our efforts. 
 
 ## ABOUT US
 ### 1/C CADET CHARLES NORMAN
