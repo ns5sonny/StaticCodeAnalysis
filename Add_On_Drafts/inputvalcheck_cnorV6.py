@@ -8,7 +8,8 @@ import cppcheck
 
 @cppcheck.checker
 def compCheck(cfg, data):
-    lengthCheckCopy = 'false'
+    lengthCheckCpy = 'false'
+    checkScope = "0"
     for token in cfg.tokenlist:
         # Detection to see if we can identify a comparison (e.g. strlen < some number)
         # These were just used to see if I could find specific items in the tokenlist
@@ -26,8 +27,8 @@ def compCheck(cfg, data):
             cppcheeck.reportError(token, 'information', 'backward comparing strlen') """
         if token.isName and token.str == 'strcpy' and token.scope == checkScope:
             cppcheck.reportError(token, 'information', 'strlen check and strcpy are in same scope')
-            lengthCheckCopy = 'true'
-        if token.isName and token.str == 'strcpy' and lengthCheckCopy == 'false':
+            lengthCheckCpy = 'true'
+        if token.isName and token.str == 'strcpy' and lengthCheckCpy == 'false':
             cppcheck.reportError(token, 'information', 'strcpy does not have proper guards')
         
 
